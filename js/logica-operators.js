@@ -1,6 +1,5 @@
 "use strict";
 
-
 //i want a routine which willdetermine if a dog is infact my dog
 //the dog must have fur,have whiskers, and have a name
 
