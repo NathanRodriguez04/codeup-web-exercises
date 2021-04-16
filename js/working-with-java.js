@@ -124,26 +124,26 @@ console.log(sample.substring(startLetter, lastLetter));
 //}
 
 // companies
-//var hoursGoogle = 6;
-//var hoursAmazon = 4;
-//var hoursFB = 10;
-//var payGoogle = 400;
-//var payAmazon = 380;
-//var payFB = 350;
-//var total = 0;
-//if (payGoogle == 400) {
-//    console.log("I made " + (payGoogle * hoursGoogle) + "$" + " at Google.");
-  //  var total = (payGoogle * hoursGoogle);
-//}
-//if(payAmazon == 380) {
-//    console.log("I made " + (payAmazon * hoursAmazon) + "$" + " at Amazon.");
-  //  var total = total + (payAmazon * hoursAmazon);
-//}
-//if (payFB == 350) {
-//    console.log("I made " + (payFB * hoursFB) + "$" + " at Facebook.");
-//    var total = total + (payFB * hoursFB);
-//    console.log("I Made " + total + "$" + " total.");
-//}
+// var hoursGoogle = 6;
+// var hoursAmazon = 4;
+// var hoursFB = 10;
+// var payGoogle = 400;
+// var payAmazon = 380;
+// var payFB = 350;
+// var total = 0;
+// if (payGoogle == 400) {
+//     console.log("I made " + (payGoogle * hoursGoogle) + "$" + " at Google.");
+//     var total = (payGoogle * hoursGoogle);
+// }
+// if(payAmazon == 380) {
+//     console.log("I made " + (payAmazon * hoursAmazon) + "$" + " at Amazon.");
+//     var total = total + (payAmazon * hoursAmazon);
+// }
+// if (payFB == 350) {
+//     console.log("I made " + (payFB * hoursFB) + "$" + " at Facebook.");
+//     var total = total + (payFB * hoursFB);
+//     console.log("I Made " + total + "$" + " total.");
+// }
 
 // Students
 //var classSize = 30;
@@ -154,38 +154,38 @@ console.log(sample.substring(startLetter, lastLetter));
 
 
 //Product offer
-var productsBought = 0;
-var offerExpired = false;
-var premiumMember = true;
-if ((productsBought > 2 || premiumMember) && offerExpired === false) {
-    console.log("Congrats your product is offered");
-    if(premiumMember) {
-        console.log(" Also ... thanks for being a premium customer.");
-    }
-}
+// var productsBought = 0;
+// var offerExpired = false;
+// var premiumMember = true;
+// if ((productsBought > 2 || premiumMember) && offerExpired === false) {
+//     console.log("Congrats your product is offered");
+//     if(premiumMember) {
+//         console.log(" Also ... thanks for being a premium customer.");
+//     }
+// }
 var username = "codeup";
-var password = "notastrongpassword";
-if (password.length> 5) {
-    var longEnoughPass = true;
-    console.log("Good Pass Length");
-} else console.log("Pass not long enough");
-if (password.includes(username) === false) {
-    console.log("Good password.");
-    var includesUsername = false;
-} else {
-    console.log("You cant have your username inside your password.");
-    var includesUsername = true;
-}
-if (username.length < 20) {
-    var acceptableUserLength = true;
-    console.log("your user is acceptable length");
-} else {
-    var acceptableUserLength = false;
-    console.log("your user must be under 20 characters");
-}
-if (username){
-    var username = username.trim();
-}
-if (password){
-    var password = password.trim();
-}
+ var password = "notastrongpassword";
+ if (password.length> 5) {
+     var longEnoughPass = true;
+     console.log("Good Pass Length");
+ } else console.log("Pass not long enough");
+ if (password.includes(username) === false) {
+     console.log("Good password.");
+     var includesUsername = false;
+ } else {
+     console.log("You cant have your username inside your password.");
+     var includesUsername = true;
+ }
+ if (username.length < 20) {
+     var acceptableUserLength = true;
+     console.log("your user is acceptable length");}
+ else {
+     var acceptableUserLength = false;
+     console.log("your user must be under 20 characters");
+ }
+ if (username){
+     var username = username.trim();
+ }
+ if (password){
+     var password = password.trim();
+ }
