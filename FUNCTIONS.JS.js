@@ -104,6 +104,6 @@
         var discountAmount = originalPrice * DiscountPercent
         return(originalPrice - discountAmount).toFixed(2);
          }
-         console.log(applydiscount(50.00, 0.1));
+         console.log(applydiscount(69.99, 0.1));
      }
  )()
