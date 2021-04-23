@@ -102,4 +102,6 @@
 //  -> When the li is clicked again, reset the li background color to its original color
 //      -> Don't worry about changing the text back
 
+
+
 })();
