@@ -1,41 +1,299 @@
 "use strict";
+//* LOOPS *//
 
+// // WHAT ARE LOOPS:
 
-// Iteration - repetition of a process until a desired outcome is reached -- The sequence needs an end point to approach. Each repetition is a sing iteration.
+// // ITERATION?
+// // -  Iteration is the repetition of a process in order to generate an outcome. The sequence will approach some end point or end value. Each repetition of the process is a single iteration, and the outcome of each iteration is then the starting point of the next iteration.
 
-// Infinite loops are when you have a loop with an unobtainable outcome.
+// // INFINITE LOOPS
+// // ... avoid them at all costs!
+// // if the condition is set to true or the condition won't ever meet false, then you might encounter an infinite loop
 
+// "tomato"
 
+// // WHILE LOOPS
 
-// WHILE LOOPS
+// // a while loop will continue to run code until the condition is FALSE
+// // be careful with while loops, make sure that the condition WILL meet false
+// // checks condition before running code
 
-// var count = 0
-// var numOfSteps = 0;
-// while (numOfSteps <= 10) {
-//     console.log(`Keep walking. #${count}`);
-//     numOfSteps = numOfSteps + 2;
-//     count++
+// // SYNTAX:
+// // while: js keyword that says "hey, let's start a while loop
+// // (the condition you are checking against will go inside of these parentheses)
+// // { the code to be executed WHILE (as long as) the condition is true, will live inside your curly brackets}
+
+// while (/*condition*/) {
+//     // body
+// //    code to be executed as long as the condition continues to be true;
+// }
+
+// numOfSteps = 0;
+// while (numOfSteps <= 30){
+//     console.log(`starting iteration at: ${numOfSteps}`); // template literals
+//     console.log("keep walking, you're currently at: " + numOfSteps + " steps");
+//     numOfSteps = numOfSteps + 10; //10 //20 //30 //40
+//     console.log(`ending iteration at: ${numOfSteps}`);
+//     console.log(`-----------------------`)
 // }
 
 
-// DO WHILE
+
+// // examples: 8- until we reach 10
+// // start at 25 until we reach 50, and it's going to add 30 at each iteration // iterating by 30s
+// var num = 25; // starting point
+//
+// while(num <= 50){ // stopping point
+//     // code to be executed at each iteration
+//     console.log('num: ' + num);
+//     num += 5; // iterator
+//     console.log(`num plus one: ${num}`);
+// // // or x += 10
+// // // or x++
+// }
+
+// // let's go backwards, start at 25 end at 1;
+// var backwards = 25;
+// while(backwards <= -10){ // false <-- 25 is not <= 10 so it won't run not even once;
+//     console.log(`starting iteration at: ${backwards}`);
+//     backwards = backwards - 5;
+//     console.log(`ending iteration at: ${backwards}`);
+// }
+//
+// console.log(`outside of loop`);
+
+// // let's go backwards, start at 25 end at 1;
+
+// // DON'T RUN THIS!! INFIINTE LOOP
+// var backwards = -25;
+// while(backwards <= -10){ // true // true  // true
+//     console.log(`starting iteration at: ${backwrds}`); // -25 // -30
+//     backwards = backwards - 5; // -25 -> -30 // -30 -> -35
+//     console.log(`ending iteration at: ${backwards}`); // -30 // -35 //
+// }
+//
+// console.log(`--------`);
+
+// // IT RUNS BACKWARDS
+var backwards = 25;
+while(backwards >= -10){  // true // is 20 >= -10 : TRUE  // ... --15 --> FALSE
+    console.log(`starting iteration at: ${backwards}`); // 25 //20
+    backwards = backwards - 5;  // 25 -> 20 // 20 -> 15
+    console.log(`ending iteration at: ${backwards}`); // 20 // 15
+}
+
+console.log(`--------`);
+
+//
+// // // QUESTION: why do we need to add 1 to the num variable?
+//
+// // // let's iterate by 5s as long as our variable doesn't pass 45
+//
+// // // starting point
+// let fives = 0;
+//
+// // // condition
+// while(fives <= 45){
+//
+//     // // statement
+//     console.log(`starting while loop at: ${fives}`);
+//
+//     // // iterator
+//     fives = fives + 5;
+//     console.log(`finishing while loop with: ${fives}`);
+// }
+
+
+
+
+
+// // TODO: MINI EXERCISES
+// // TODO: print all even numbers between 0 and 25;
+
+// var counter = 0; // starting point
+//
+// while(counter <= 25){
+//     console.log(`starting num: ${counter}`);
+//     if(counter % 2 === 0){
+//         console.log(counter);
+//     }
+//     counter +=1;
+// }
+
+// // TODO: using prompt() and alert(), write a loop that will continue to ask for the correct password until the
+// // correct password is given.
+
+// hint: start by defining the correct password and don't forget to link your html file
+
+
+// var pin = "itsasecret";
+//
+// var input = prompt("Welcome please enter your password:");
+//
+// while (input != pin)
+// {
+//     alert("WRONG PASSWORD, TRY AGAIN");
+//     input = prompt("Enter your password");
+// }
+//
+// alert("Pin accepted");
+
+// var pin = "itsasecret";
+//
+// // var input = prompt("Welcome please enter your password:");
+//
+// while (input != pin){
+//     var input = prompt("Welcome please enter your password:");
+//     alert("WRONG PASSWORD, TRY AGAIN");
+//     input = prompt("Enter your password");
+// }
+//
+// alert("Pin accepted");
+//
+// var myName = "laura" // assignment
+
+
+
+
+// // DO WHILE LOOPS
+// //similar to while loop, but executes the code once before checking the conditional
+// // after running the code once, it will continue to execute code if condition is true or exit if it's false, just
+// like the while loop
+
+// // SYNTAX:
+
+// // do: js keyword that says 'hey we're about to start a do while loop
+// // {code to be executed once and then again only if condition is true}
+// // while: js keyword that says 'hey, here's that condition that we should check if it's true, if it's true go
+// // ahead and keep running that code, if it's false then just exit outta here!'
 
 // do {
-//     // executes code
-// } while (condition) // does something then checks condition then does it again until condition fails.
+//     // execute code
+// } while (condition);
 
 
-// var numStudents = 0;
+
+// // EXAMPLES:
+
+// // print "we have ___ amount of desks left"
+// // variable that holds amount of students; --> our starting point (start at 0)
+// // define amount of desks available --> inside the while condition
+// // start our do loop
+// // increment amount of students
+// // execute code: log the sentence inside do {}
+// //
+
+var numStudents = 0; // variable holding amt of students starting at 0
+do { // execute once and then again ONLY IF the condition in the while parenthesis is true
+    var desksAvailable = 20 - numStudents;  // 20 // 20 - 1 = 19 //
+    console.log(`we have ${desksAvailable} amount of desks left`); //20 //19
+    numStudents++; // 1 // 2
+} while(numStudents <= 20)
+
+console.log("sorry, class is full!");
+
+
+
+
+// // classroom with only 20 desks:
+// let numStudents = 0;
+//
 // do {
-//     console.log(`we have ${20-numStudents} desks remaining`);
+//     // console.log(`first console in do-while: ${numStudents}`);
 //     numStudents++;
-// }while(numStudents <= 20);
-// console.log("Sorry class is full...");
+//     console.log(`second console in do-while: ${numStudents}`);
+// } while (numStudents < 20);
+//
+// console.log(numStudents)
+
+// //
+// example: sing happy bday every year and when they reach 16 say "i got you a car"
+//// challenge: accommodate for starting age at 0 or having different logs at different ages
+var age = 1; // = age starting point
+do {
+    // sing a song
+    console.log("`happy bday! you're now " + age + " years old!");
+    age++;
+} while(age < 16) // ==>  output from loop is going to be your starting point at the following iteration
+
+// log too old no more celebrations
+console.log(`sorry you're too old for songs, got you a car instead, happy ${age}th birthday`);
+
+// template literals `hey, he said: "happy" +
+//     " birthday" to
+//      me but she didn't say anything even though I turned ${age} years old today. `
+//    increment
+var sentence = `this is a sentence ${age}`;
 
 
-// var age = 1;
-// do {
-//     console.log(`Happy birthday you are now ${age} years old.`);
+// let age = 5;
+// do{
+//     console.log("happy birthday!")
 //     age++;
-// }while (age < 16);
-// console.log(`Happy birthday. Enjoy your ${age}th birthday. Here's a car.`);
+//     if(age <=15){
+//         console.log(`I need a ride I'm only ${age}`);
+//     } else {
+//         console.log(`I'll drive! I'm already ${age} years old`)
+//         }
+// } while(age < 16 )
+
+
+// // TODO: A parking lot with 30 parking spaces wants to display the amount of spaces available as it gets filled.
+//  Let's assume that there are allowing two cars into the parking lot at a time. As those cars take up spaces,
+//  write a do-while loop that prints the spaces available. If the parking lot gets filled, print "this parking lot
+//  is now full" to the console.
+
+// // HINT: think of a countdown, remember if statements can be used inside of your statements
+
+var spacesAvailable = 30; // empty parking garage
+do{
+    console.log(`there are  ${spacesAvailable} parking spaces available in this parking lot`);
+    spacesAvailable = spacesAvailable -2;
+    if(spacesAvailable === 0){
+        console.log(`This parking lot is now full`);
+    }
+
+} while(spacesAvailable >= 1);
+
+var numOfCars = 2;
+
+var carton = 0;
+ for(let eggs = 1; eggs <= 72; eggs++) {
+     console.log("eggs" + eggs);
+     if (eggs % 12 == 0) {
+         carton++;
+     }
+     console.log(`We have filled ${carton} amount of egg cartons with ${eggs} number of eggs`)
+ }
+
+
+ for(let i = 0; i <=10; i++){
+     console.log(i)
+ }
+
+//WRITE A NESTED LOOP
+// WRITE A NESTED  FOR LOOP THAT COUNTS FROM 1 TO 5 AND THEN FROM 5 TO 1
+//
+
+// LOOP TO THE COUNT FROM 1 TO 10
+// STARTING POINT
+// RETURN VALUE
+// INCREMENT
+// VARIABLE THAT WILL HOLD COUNT
+// LOGGIN GHT CURRENT COUNT
+//CONDITIONAL-STOPPING POINT
+
+
+
+// TODO: Loop through a set of numbers (0-30), if the number you're currently at is even, add 2 to it. If it's an
+//  odd number, print "odd"
+// // HINT: remember the remainder operator (modulo)
+
+for(let i = 0; i <= 30; i++){
+    console.log(i % 2,);
+}
+
+
+// // TODO: loop through numbers 1 - 40. Print "marco" if it's divisible by 3. Print "polo" if it's divisible by 5.
+//  If it's neither print "I'm not playing"
+//  Print "marco polo" if it's divisible by 3 and
