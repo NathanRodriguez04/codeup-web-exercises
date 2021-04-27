@@ -4,8 +4,6 @@
 //  -> In a console.log, output a string which describes yourself based on those elements
 //  -> KEEP IN MIND ZERO-INDEXING!
 
-var myCharacteristics = ["nathan","web student","21"]
-    console.log(`hello i'm ${}`)
 
 
 
@@ -17,7 +15,7 @@ var myCharacteristics = ["nathan","web student","21"]
 //  -> DID YOU KNOW: You can add different data types to an array??
 //      -> Try adding strings, numbers, or booleans as elements
 
-var gaming =
+var gaming
 
 
 

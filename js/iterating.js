@@ -52,10 +52,20 @@ var names =["nathan","jake","rob","joe"]
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-    function first(names)
-    return
+    function first(array){
+        return array [0]
+    }
+    function second (array){
+        return array [1]
+    }
 
-    / TODO: MINI-EXERCISE
+    function last (array){
+        return array [3]
+    }
+
+    console.log(`The first name is ${first(names)}. The second name is ${second(names)}. The last name is ${last(names)}`)
+
+    // TODO: MINI-EXERCISE
 //  -> var days = ["Monday", "Tuesday", "Wednesday"];
 //  -> Create an array with the remaining days of the week
 //  -> Call .forEach() on that NEW array
@@ -63,7 +73,25 @@ var names =["nathan","jake","rob","joe"]
 //      -> add the remainingDay of the week to the old array
 //  -> When the loop completes, console.log() the completed day of the week array
 
-    var days = ["Monday", "Tuesday", "Wednesday","thersday","friday"];
+    var days = ["Monday", "Tuesday", "Wednesday","Thursday","Friday"]
+    console.log(days)
+    days.forEach(function(days) {
+        console.log(`the day of the week is `+ days + `.`);
+    })
+    // TODO - MINI EXERCISE
+//  -> Let's reverse engineer our days of the week array
+//  -> Make sure to console.log in order to see your code's behavior!
+//  -> Write a function which takes in your complete days of the week array
+//      -> It will eventually return your reverse-engineered array
+//  -> Using a FOR LOOP (not .forEach())
+//      -> pop() each item off the days array
+//      -> use the returned value from pop() to unshift the element
+//      -> on to the new array
+//  -> HINT: You may find that the loop doesn't behave as expected
+//      -> console.log EVERY possible thing which could change as your loop runs
+//          -> consider how the methods you are using change state of the array
+
+
 
 
 })();

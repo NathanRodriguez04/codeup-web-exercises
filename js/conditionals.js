@@ -35,9 +35,9 @@
         }
     }
     console.log(analyzeColor('blue'));
-    console.log(analyzeColor("RED"));
-    console.log(analyzeColor("cYaN"));
-    console.log(analyzeColor("Hooplah"));
+    console.log(analyzeColor("red"));
+    console.log(analyzeColor("cyan"));
+    console.log(analyzeColor("cool color"));
     // Don't change the next two lines!
     // These lines create two variables for you:
     // - `colors`: a list of the colors of the rainbow
@@ -161,12 +161,7 @@
      */
     function numberChecker(){
         var number = prompt("What is your number?");
-        function numberTest() {
-            var playCheck = confirm("Want to play the number test?");
-            if (playCheck) {
-                var number = (prompt("Enter a number."));
-            }
-        }
+
         if (number % 2 === 0) {
             alert("Your number is even.");
         } else {
@@ -181,6 +176,12 @@
             alert("Your number is not positive or negative because it is 0.");
         }
     }
+    function numberTest() {
+        var playCheck = confirm("Want to play the number test?");
+        if (playCheck) {
+            var number = (prompt("Enter a number."));
+        }
+    }
 
-
-console.log(numberTest());}
+console.log(numberTest())
+}())
