@@ -1,4 +1,4 @@
-(function (){
+(function () {
     "use strict";
 
 // function isOdd(number){
@@ -73,7 +73,6 @@
 //     console.log(multiplyIfNumeric("be string" ,5))
 
 
-
 // TODO: write a function called toUppercase which takes in one input and
     //  returns that input in uppercase IF (and only if) the input is a non-numeric string
     //  otherwise, return false
@@ -82,9 +81,10 @@
         if (typeof x === 'string' && isNaN(x)) {
             return x.toUpperCase();
         }
-            return false;
+        return false;
 
     }
 
     console.log(toUppercase('nate'))
 
+}())
