@@ -1,0 +1,19 @@
+/*
+Working with css
+ */
+
+/*
+CSS structure
+- selector (h1,html...) what elelments are you stylinh in html page
+- { actual style chnages
+- property : value
+selector {
+    properties: values;
+}
+ */
+html {
+    background-color: #91bf74;
+}
+h1, h2 {
+    color: aquamarine;
+}
