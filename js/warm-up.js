@@ -15,3 +15,9 @@ function last(input){
 }
 
 console.log(last("nathan"))
+
+function remainder(number, divisor){
+    return number % divisor;
+}
+
+console.log(remainder(9,2))
