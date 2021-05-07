@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+.flex-container {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+    flex-flow: row;
+    /*align-items: baseline;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-end;
+    height: 10em;
+
+}
+
+.flex-item {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+}
+
+.box3 {
+    font-size: 15px;
+    flex-grow: 1;
+}
+.box4 {
+    font-size: 20px;
+    flex-grow:2;
+}
+.box5 {
+    font-size: 25px;
