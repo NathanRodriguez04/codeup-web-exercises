@@ -27,12 +27,13 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
-    z-index: 2000;
-    padding: 1.5em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 .nav {
     list-style-type: none;
-    padding: 1.5em;
+    padding: 0;
     margin: 0;
 }
 .nav-link {
@@ -45,6 +46,7 @@ a {
 }
 .profile {
     background: var(--light-bg);
+    height: 80px;
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -67,4 +69,41 @@ a {
 }
 .text-muted {
     color: var(--main-link-color);
+}
+.nav-item{
+    display: inline-block;
+    padding: 1.5em;
+}
+.profile-image{
+    position: absolute;
+    top: 250px;
+}
+.profile-form{
+    float: right;
+    line-height: 80px;
+}
+.profile-details, .who-to-follow{
+    float: left;
+    width: calc(25% - 1em);
+    margin: 0em .5em;
+}
+.timeline{
+    float: left;
+    width: calc(50% - 1em);
+    margin: 0em .5em;
+}
+.container{
+    margin-top: 2em;
+}
+.media{
+    width: 100%;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
+    padding: .5em;
+    overflow: auto;
+}
+.media-image{
+    max-width: 50px;
+    float: start;
+    margin-top: 1.33em;
 }
