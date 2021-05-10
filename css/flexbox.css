@@ -45,7 +45,8 @@ section {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
     /* enter needed declarations here */
 }
 
