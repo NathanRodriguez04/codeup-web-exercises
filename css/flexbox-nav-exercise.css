@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    background-color: #848487;
+    justify-content: space-between;
+}
+.first-nav{
+    display: flex;
+    align-self: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding-left: .5em;
+}
+.nav-list{
+    display: inline-block;
+    font-family: Montserrat, Serif;
+    padding-right: .5em;
+}
+a:-webkit-any-link{
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.logo{
+}
+.logo-spot{
+    display: flex;
+    font-size: 3em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    margin: auto;
+    font-family: Work Sans, Serif;
+    margin-right: 2em;
+
+
+}
+.second-nav{
+    display: flex;
+    align-self: center;
+}
+body{
+    margin: 0;
+}

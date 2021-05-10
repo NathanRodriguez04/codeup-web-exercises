@@ -11,10 +11,10 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    // var person = {
-    // 	firstName : "nathan",
-    // 	lastName : "rodriguez"
-    // }
+    var person = {
+    	firstName : "nathan",
+    	lastName : "rodriguez"
+    }
 
 
     /**
@@ -26,11 +26,11 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    // person.sayHello = function (){
-    // 	return `Hello from ${this.firstName} ${this.lastName}!`
-    // }
-    //
-    // console.log(person.sayHello())
+    person.sayHello = function (){
+    	return `Hello from ${this.firstName} ${this.lastName}!`
+    }
+
+    console.log(person.sayHello())
 
 
     /** TODO:
@@ -47,20 +47,20 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-    //
-    //
-    // 	shoppers.forEach(function (name){
-    // 		if(name.amount > 200) {
-    // 			console.log(`Hello, ${name.name}, your total is ${name.amount}, your discount is ${name.amount * .12} your price after discount is ${name.amount - (name.amount * .12)}`)
-    // 		}else{
-    // 			console.log(`Hello, ${name.name}, you unfortunately do not meet the requirements for the discount.`)
-    // 		}
-    // 	});
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+
+    	shoppers.forEach(function (name){
+    		if(name.amount > 200) {
+    			console.log(`Hello, ${name.name}, your total is ${name.amount}, your discount is ${name.amount * .12} your price after discount is ${name.amount - (name.amount * .12)}`)
+    		}else{
+    			console.log(`Hello, ${name.name}, you unfortunately do not meet the requirements for the discount.`)
+    		}
+    	});
 
 
 
@@ -82,8 +82,8 @@
     var books = [
         {title: "Exile", author: {firstName: "Robert Anthony", lastName: "Salvatore" }},
         {title: "The Hobbit", author: {firstName: "J.R.R", lastName: "Tolkien" }},
-        {title: "The Eye of the World", author: {firstName: "Robert", lastName: "Jordan"}},
-        {title: "Alice's Adventures in Wonderland", author: {firstName: "Lewis", lastName: "Carol"}},
+        {title: "Harry Potter", author: {firstName: "J.K", lastName: "Rowling"}},
+        {title: "Alice in Borderland", author: {firstName: "Ryō", lastName: "Ōyama"}},
         {title: "The Way of Kings", author: {firstName: "Brandon", lastName: "Sanderson"}}
     ];
 
