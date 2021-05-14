@@ -20,4 +20,22 @@ function remainder(number, divisor){
     return number % divisor;
 }
 
-console.log(remainder(9,2))
+console.log(remainder(8,2))
+console.log("-----------")
+
+function constructNum(num) {
+    let total = 0;
+    for (let i = num - 1; i >= 0; i--) {
+        total = total + num * Math.pow(10, i);
+    }
+    return total;
+}
+
+function printNumber() {
+    for (let i = 1; i <= 5; i++) {
+        console.log(constructNum(i));
+    }
+}
+
+printNumber();
+console.log("");
