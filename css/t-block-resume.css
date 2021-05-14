@@ -1,0 +1,56 @@
+h1{
+    color: blue;
+}
+h2{
+    color: orangered;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    background-color: dodgerblue;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+    color: white;
+}
+
+.top-border {
+    margin-top: 5px !important;
+    margin-bottom: 30px !important;
+    border-bottom: 5px solid #ff4500 !important;
+}
+
+.nav-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.main-title {
+    color: blue;
+    margin-bottom: 10px !important;;
+}
+
+.space-between {
+    margin-bottom: 30px;
+}
+
+.fa-envelope {
+    padding-right: 5px;
+}
+
+.fa-github-square {
+    padding-right: 5px;
+}
+
+.fa-linkedin {
+    padding-right: 5px;
+}
+
+.main-p {
+    color: #ff4500;
+    font-weight: 500;
+}
+h5{
+    color: orangered;
+}
