@@ -83,3 +83,5 @@ let usernameString = users.reduce(function(accumulator, user){
 }, ``).slice(0, -1) + ".";
 
 console.log(usernameString);
+
+//can try something new
