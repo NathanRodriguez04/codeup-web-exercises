@@ -39,3 +39,9 @@ function printNumber() {
 
 printNumber();
 console.log("");
+
+
+
+ function secondToLast(arr){
+
+ }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <script>
+            (function() {
+
+                // function showTime() {
+                //   let count = 0
+                //
+                //   let dateTime = new Date();
+                //
+                //   let time = dateTime.toLocaleTimeString();
+                //
+                //   count += 1
+                //
+                //   if (count === 5) {
+                //     clearInterval(display);
+                //   }
+                //
+                //   console.log(time);
+                // }
+                //
+                // let display = setInterval(showTime, 5000);
+
+                function showTime() {
+                    let dateTime = new Date();
+                    console.log(dateTime);
+                }
+
+                setTimeout(showTime, 6000);
+
+
+            })();
+        </script>
+
+    </body>
+</html>
