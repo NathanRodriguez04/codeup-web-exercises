@@ -52,4 +52,6 @@ function setPopup(arr) {
         object.marker.setPopup(popup);
         object.marker.togglePopup();  //grady told me to add for toggle popup
     })
+
+
 }
