@@ -24,15 +24,22 @@
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
       culpa qui officia deserunt mollit anim id est laborum.
     </p>
-    <button id="btn1">whats this do 1</button>
-    <button id="btn2">whats this do 2</button>
-    <button id="btn3">whats this do 3</button>
-    <button id="btn4">whats this do 4</button><br>
-    <button id="btn5">Reset This Things</button>
+<!--    <button id="btn1">whats this do 1</button>-->
+<!--    <button id="btn2">whats this do 2</button>-->
+<!--    <button id="btn3">whats this do 3</button>-->
+<!--    <button id="btn4">whats this do 4</button><br>-->
+<!--    <button id="btn5">Reset This Things</button>-->
 
     <script>
       (function() {
         "use strict";
+        var addDiv = document.createElement("div");
+        addDiv.setAttribute("id", "div1");
+        document.body.appendChild(addDiv);
+        var spot1 = document.createElement("button");
+        spot1.setAttribute("id", "btn1");
+        spot1.innerHTML="whats this do"
+        addDiv.appendChild(spot1);
 
         var changeMainHeader = function(){
           mainHeader.innerHTML = "What it do";
