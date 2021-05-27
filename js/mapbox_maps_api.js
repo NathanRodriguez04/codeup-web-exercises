@@ -14,6 +14,7 @@ function getMap() {
     })
 }
 
+
 setZoom();
 
 function setZoom() {
@@ -44,6 +45,8 @@ let restaurants = [
     }
 
 ];
+
+
 
 setPopup(restaurants);
 function setPopup(arr) {
