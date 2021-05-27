@@ -43,6 +43,6 @@
 //
 //
  function secondToLast(arr){
-     secondToLast()
+     secondToLast(n)
  }
 
