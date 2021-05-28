@@ -13,6 +13,7 @@
 
     var person = {
     	firstName : "nathan",
+        middilName: "joe",
     	lastName : "rodriguez"
     }
 
