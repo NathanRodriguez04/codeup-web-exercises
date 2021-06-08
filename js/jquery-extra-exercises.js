@@ -1,5 +1,4 @@
-(function(){
-    // //make sure the DOM is loaded first
+// //make sure the DOM is loaded first
 // document.addEventListener("DOMContentLoaded", function () {
 //     addListeners();
 // });
@@ -43,8 +42,8 @@
 //
 // let keydownHandler= function(e){
 //     console.log(this.value);
-//     if(this.value === "juan"){
-//         alert("That's my name , dont wear it out!")
+//     if(this.value === "nathan"){
+//         alert("That's my name")
 //     }
 // }
 // $("input").keydown(keydownHandler)
@@ -84,22 +83,20 @@
 //  -> Now, when a user hovers over one of the .col-md-3 containers, you should replace the text inside #card-title with the data-attribute value
 //  -> When the user hovers out, the data-attribute value should be replaced with the original text ("Card")
 
-    let hoverIn = function () {
-        let attributeValue = $(this).attr("data-attribute");
-        $(".card-title").text(attributeValue);
+let hoverIn = function () {
+    let attributeValue = $(this).attr("data-attribute");
+    $(".card-title").text(attributeValue);
 
-    }
+}
 
-    let hoverOut = function () {
-        $(this).find(".card-title").text("Card")
-    }
+let hoverOut = function () {
+    $(this).find(".card-title").text("Card")
+}
 
 
-    $(".col-md-3").hover(hoverIn, hoverOut)
+$(".col-md-3").hover(hoverIn, hoverOut)
 
 // TODO: When an li with the .list-group-item class is clicked, replace the text with the same text, but uppercased
 //  -> ALSO, change the background of the li to a new color
 //  -> When the li is clicked again, reset the li background color to its original color
 //      -> Don't worry about changing the text back
-
-})();
