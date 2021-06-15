@@ -1,0 +1,2 @@
+const MAPBOX_TOKIN = 'pk.eyJ1IjoibmF0aGFuMjYyNiIsImEiOiJja3Bwb25yaTAwMnk4Mm9wZmI0cm5tN3dhIn0.9IfwPtXEFQggmoKXevQ0Aw';
+const apis_tokin = 'b015c65613bc5a05d21c74a739c11d83';
